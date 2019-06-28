@@ -1,0 +1,367 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
+
+
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Fullcalendar
+@import '~fullcalendar/dist/fullcalendar';
+
+// Datatables
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+
+* {
+  font-family: "Google Sans";
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.loginPage:root {
+  margin: 0;
+}
+
+.loginPage {
+  width: 100%;
+  max-height:100vh;
+  height: 100vh;
+  display: flex;
+}
+
+.loginPage .left {
+  display: flex;
+  width: 50%;
+  height: inherit;
+}
+
+.loginPage .left .inner {
+  background-image: url("/images/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.loginPage .right {
+  display: flex;
+  width: 50%;
+  height: inherit;
+}
+
+.loginPage .right .inner {
+  margin: auto;
+  width: 375px;
+}
+
+.loginPage .right .inner .forgotPw {
+  text-align: right;
+}
+
+.loginPage .right .inner .forgotPw .btn {
+  display: unset;
+}
+
+.loginPage .right .inner .btnHolder {
+  text-align: center;
+}
+
+.loginPage .right .inner .btnHolder .btn {
+  border: #ccc;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 50px;
+}
+
+.loginPage .right .inner .btnHolder .btn .login {
+  background-color: #000;
+}
+
+body {
+  background: #f4f8f9;
+}
+
+#page-container {
+  margin: 125px 100px 75px 385px;
+}
+
+.sidebar .sidebar-nav li>i {
+  margin-right: 15px;
+}
+
+/* NAVIGATIE MENU */
+.navbar {
+  width: 83%;
+  background: #3c8dbc;
+  padding: 0 20px 0 0;
+  height: 62px;
+  position: fixed;
+  right: 0;
+  top:0;
+  z-index: 10;
+}
+
+.navbar .dropdown p {
+  margin-bottom: auto;
+  white-space: nowrap;
+}
+
+.navbar .searchBox input {
+  margin-left: 65px;
+  padding: 10px;
+  width: 325px;
+  background-color: #367fa8;
+  color: #FFF;
+  border: none;
+}
+
+.navbar .searchBox button {
+  margin-left: -38px;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
+.navbar .searchBox button i {
+  font-size: 18px;
+  color: #FFFFFF99;
+}
+
+.navbar .searchBox input::placeholder {
+  color: #FFFFFF66;
+}
+
+.quickAction .logOut {
+  margin: auto;
+  color: #FFF;
+  font-size: 20px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.quickAction form .lo, .quickAction .message {
+  background-color: transparent;
+  border: none;
+  font-size: 21px;
+  color: #FFFFFF99;
+}
+
+.quickAction .message {
+  position: relative;
+}
+
+.quickAction .message .badge {
+  background-color: red;
+  font-size: 10px;
+  top: 0;
+  right: 5px;
+  position: absolute;
+}
+
+.quickAction .dropdown {
+  margin: auto;
+}
+
+.quickAction .dropdown span {
+  color: #FFFFFF99;
+  margin: 10px;
+  user-select: none;
+}
+
+.quickAction ul>a {
+  border-right: 1px solid #FFFFFF99;
+  min-width: 70px;
+  text-align: center;
+  margin: auto;
+}
+
+.quickAction {
+  position: absolute;
+  right: 10px;
+}
+
+ .btn-lo {
+  background: transparent;
+  border: none;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #367fa8;
+  border-color: #367fa8;
+}
+
+
+  /* SIDEBAR */
+.sidebar {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #296080;
+  width: 17%;
+  color: white;
+  display: inline-block;
+  z-index: 10;
+}
+
+
+
+.sidebar .brand {
+  background: #367fa8;
+  height: 62px;
+}
+
+.sidebar .brand .topWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.sidebar .brand .topWrapper a{
+  color: #FFFFFF99;
+  text-decoration: none;
+}
+
+.sidebar .sidebar-nav li {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #FFFFFF40;
+  color: #FFFFFF99;
+}
+
+.sidebar .sidebar-nav ul {
+  list-style-type: none;
+  /* padding-top: 20px; */
+  padding: 20px 0 0 35px;
+}
+
+.sidebar .sidebar-nav ul li:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebar .sidebar-nav ul a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.sidebar .sidebar-nav li:hover, .navbar .searchBox button i:hover, .dropdown-item:hover {
+  color: #FFF;
+  transition: ease-in-out all .3s;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  background-color: #367fa8;
+  color: #FFFFFF99;
+}
+
+.dropdown-item {
+  color: #FFFFFF99;
+}
+
+.btn-secondary:hover {
+  background-color: #296080;
+  border-color: #296080;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  background-color: #296080;
+  border-color: #296080;
+}
+
+.sidebar .sidebar-nav ul li.sbNew{
+  margin-bottom: 50px;
+}
+
+.sidebar .sidebar-nav ul li.contacts {
+  margin-top: 50px;
+}
+
+
+.sidebar .sidebar-nav .header-search-form input {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  font-size: 20px;
+  background: #1D2629;
+  border: none;
+  color: #3c8dbc;
+}
+
+.sidebar .sidebar-nav .header-search-form button {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 18px;
+  font-size: 26px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.sidebar .sidebar-footer {
+  position: absolute;
+  bottom: 10px;
+  color: #FFFFFF30;
+  left: 20px;
+}
+
+/* CALENDER / HOME */
+
+
+
+/* CONTACTEN */
+
+.contact {
+  list-style: none;
+  justify-content: space-around;
+}
+
+
+.contact-info {
+  margin-top: 2rem;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+
+.contact-persoon {
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.contact-persoon a {
+  color: black;
+}
+
+#contact-extra {
+  text-align: center;
+}
+
+.form-group textarea {
+  height: 210px;
+  min-height: 99px;
+}
+
+.form-check-input {
+  margin: 0 7px 0 0;
+  position: unset;
+
+}
